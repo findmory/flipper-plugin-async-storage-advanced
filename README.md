@@ -1,34 +1,28 @@
-# Flipper Async Storage Advanced plugin
+# `rn-flipper-async-storage-advanced`
 
-## Introduction
+This is a client package for the flipper-plugin-async-storage-adavanced plugin.
 
-This plugin is designed to work with Flipper (https://fbflipper.com/) and Async Storage (https://github.com/react-native-async-storage/async-storage) library.
+This package supports async-storage https://github.com/react-native-async-storage/async-storage.
 
-The plugin provides standard read/write/delete/update operations on the Async Storage keys in React Native applications.
+It has to be installed side by site with `react-native-flipper` package.
 
-![plugin_video](images/output.gif "Plugin Video")
+For detailed installation instructions please refer to the main readme file.
 
 ## Installation
 
-Similarly to other Flipper plugins for React Native, this one comes in two packages.
+Obviously async-storage itself is a dependency.
 
-### Client package
-
-The first package is a client package that has to be installed in your React Native app.
-
-#### Install the package
-
-If you haven't already installed `react-native-flipper` you need to do it now.
-
-Simply run:
+Unless you already have it installed in your project, please install `react-native-flipper`
 
 `npm i react-native-flipper --save`
 
-Once the react-native-flipper package is installed, you can go ahead and install the actual rn-flipper-async-storage-advanced package.
+Once installed you can go ahead and install the actual package.
 
 `npm i rn-flipper-async-storage-advanced --save`
 
-Once the package is installed, simply import it
+## Usage
+
+To use this package in your project, first you need to import it:
 
 `import FlipperAsyncStorage from 'rn-flipper-async-storage-advanced';`
 
@@ -56,8 +50,4 @@ const App: () => Node = () => {
 };
 ```
 
-### Flipper plugin
-
-The second package is a plugin package that has to be installed from inside Flipper.
-
-Open Flipper and find your plugin manager, simply search for 'flipper-plugin-async-storage-advanced' and install it.
+That's it, now you should be able to see your async storage keys via the `flipper-plugin-async-storage-advanced`
